@@ -1,0 +1,35 @@
+.btn {
+  // border: none;
+  padding: 10px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  transition: 750ms ease-in-out;
+  &:hover {
+    color: whitesmoke;
+    transition: 750ms ease-in-out;
+  }
+  &.btn-primary {
+    background-color: var(--color-btn);
+    border: 1px solid var(--color-btn-border);
+  }
+  &.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--color-btn-border);
+    padding: 10px 12px;
+    color: white;
+    // color: var(--navbar-brand);
+  }
+  &.ms-m {
+    margin: 0 6px;
+  }
+  &.ms-mr {
+    margin-right: 6px;
+  }
+  &.ms-ml {
+    margin-left: 6px;
+  }
+  &.ms-mt {
+    margin-top: 6px;
+  }
+}

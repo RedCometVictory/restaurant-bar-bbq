@@ -14,16 +14,34 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "dotenv": "^10.0.0",
+    "emailjs-com": "^3.1.0",
     "gatsby": "^3.6.2",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-image": "^1.8.0",
+    "gatsby-plugin-mdx": "^2.8.0",
+    "gatsby-plugin-react-helmet-async": "^1.2.0",
+    "gatsby-plugin-react-svg": "^3.0.1",
+    "gatsby-plugin-sass": "^4.7.1",
+    "gatsby-plugin-sharp": "^3.8.0",
+    "gatsby-remark-images": "^5.5.0",
+    "gatsby-source-filesystem": "^3.8.0",
+    "gatsby-transformer-json": "^3.8.0",
+    "gatsby-transformer-sharp": "^3.8.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-helmet-async": "^1.0.9",
+    "react-icons": "^4.2.0",
+    "sass": "^1.35.1"
   },
   "devDependencies": {
     "prettier": "2.2.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/RedCometVictory/restaurant-bar-bbq"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

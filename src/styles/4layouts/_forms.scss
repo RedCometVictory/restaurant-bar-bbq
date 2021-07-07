@@ -1,0 +1,44 @@
+.form {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  // div input {
+    // to remove error red color on invalid input
+    // box-shadow: none;
+  // }
+  &__item {
+    width: 100%;
+    // border: 1px solid pink;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0 0.2rem;
+    // &.hidden {
+      // display: none;
+    // }
+  }
+  &__label {
+    margin: 0 0 0.2rem 0;
+    .req {
+      color: red;
+    }
+  }
+  &__input {
+    border-radius: 2px;
+    line-height: 2;
+    border: none;
+    font-size: 1.2em;
+    padding: 6px;
+  }
+  &__textarea {
+    // color: rgb(189, 183, 183);
+    border-radius: 2px;
+    padding: 6px;
+    border: none;
+    font-size: 1.2em;
+    resize: none;
+  }
+  &__footer {
+    margin: 0.5rem 0 0.2rem;
+  }
+}

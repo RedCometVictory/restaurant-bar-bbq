@@ -1,0 +1,321 @@
+.nav {
+  height: auto;
+  &__header {
+    display: flex;
+    // max-height: 72px;
+    z-index: 1000;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    background-color: var(--navbar-color);
+    position: relative;
+  }
+  &__brand {
+    padding: 0.3rem 0rem 0.3rem 0.3rem;
+    // background-color: var(--navbar-brand);
+    // width: 300px;
+    display: flex;
+    white-space: nowrap;
+    // border-radius: 0px 100px 100px 0px / 0px 100px 100px 0px;
+    // border: 0px solid #800000;
+    // -webkit-clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
+    // clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+    color: var(--navbar-text);
+    // img {}
+  }
+  &__title-container {
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    visibility: hidden;
+  }
+  &__title {
+    line-height: initial;
+    align-self: center;
+    .title-one {
+      font-size: 1em;
+    }
+    .title-two {
+      display: none;
+    }
+  }
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem 0 0;
+  }
+  &__toggler {
+    z-index: 200;
+    // display: none;
+    opacity: 0;
+    position: absolute;
+    right: 29px;
+    transform: scale(2);
+    cursor: pointer;
+    &:checked ~ nav .nav__links {
+      right: 0%;
+      display: block;
+      transition: 700ms ease-in-out;
+    }
+    &:checked ~ .nav__bars {
+      color: var(--navbar-brand);
+      // transition: 700ms ease-in-out;
+    }
+  }
+  &__burger {
+    display: inline-block; // ---
+    font-size: 1.6em; // ---
+    color: var(--navbar-text); // ---
+    cursor: pointer;
+    outline: none;
+    // &:focus-within > nav .nav__menu {
+    //   right: 0%;
+    //   transition: all 0.5s;
+    //   background-color: rgba(14, 10, 234, 0.5);
+    // }
+  }
+  &__bars {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    font-size: 1.8em; // ---
+    transition: 700ms ease-in-out;
+  }
+  &__menu {
+    // height: 100%;
+    align-items: center;
+    margin: 0.5rem;
+    // display: none;
+    // visibility: hidden;
+  }
+  &__links {
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--navbar-color-a);
+    top: 70px;
+    color: black;
+    right: -70%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 1rem;
+    cursor: default;
+    transition: 500ms ease-in-out;
+  }
+  &__links--secondary {
+    display: none;
+    color: var(--navbar-text);
+    position: absolute;
+    // top: 69px; // ---
+    left: 0;
+    background-color: var(--navbar-color);
+    padding: 5px 1rem 5px;
+    z-index: 200;
+    // ####################################
+    top: 38px;
+    width: 161px;
+    // position: absolute;
+    // display: block;
+    // visibility: visible;
+  }
+  // &__sub-menu {
+  //   // display: inline-block;
+  //   display: none;
+  // }
+  &__link-item {
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    white-space: nowrap;
+    height: 3rem;
+    // height: 100%; // ---
+    display: flex;
+    align-items: center;
+    &:hover > a {
+      color: var(--navbar-text-hover);
+    }
+    &:hover > span {
+      color: var(--navbar-text-hover);
+    }
+    &:hover > ul {
+      display: block;
+      // visibility: visible;
+    }
+  }
+  &__link-item--secondary {
+    display: block; // ---
+    padding: 3px 0; // ---
+    text-align: left;
+    &:hover {
+      color: var(--navbar-text-hover);
+    }
+    &:hover + span {
+      color: var(--navbar-text-hover);
+    }
+  }
+  &__link {
+    padding: 6px;
+    color: var(--navbar-text);
+  }
+  &__caret-toggle {
+    position: absolute;
+    left: 76px;
+    z-index: 200;
+    height: 10px;
+    color: var(--color-text);
+    opacity: 0;
+    &:checked ~ ul {
+      display: block;
+      // visibility: visible;
+    }
+    // &:checked ~ .nav__sub-menu {
+    //   display: inline-block;
+    // }
+    &:checked ~ span .nav__caret {
+      transform: rotateX(180deg);
+    }
+  }
+  &__caret {
+    position: absolute;
+    left: 80px;
+    top: 17px;
+    transition: 500ms ease-in-out;
+  }
+}
+// ##################################################
+// small phone screen
+@media (min-width: 300px) {
+  .nav {
+    &__brand {
+      padding: 0.3rem 1.3rem 0.3rem 0.3rem;
+      background-color: var(--navbar-brand);
+      -webkit-clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
+    }
+    &__title-container {
+      visibility: visible;
+    }
+    &__title {
+      font-size: 1em;
+      .title-one {
+        font-size: 2em;
+      }
+    }
+    &__links {
+      width: 60%;
+      right: -60%;
+    }
+  }
+}
+// mid-size phone size
+@media (min-width: 360px) {
+  .nav {
+    &__title {
+      font-size: 1em;
+      line-height: initial;
+      .title-one {
+        font-size: 2em;
+      }
+      .title-two {
+        display: initial;
+      }
+    }
+    &__links {
+      width: 50%;
+      right: -50%;
+    }
+  }
+}
+
+@media (min-width: 460px) {
+  .nav {
+    &__links {
+      width: 40%;
+      right: -40%;
+    }
+  }
+}
+@media (min-width: 560px) {
+  .nav {
+    &__links {
+      width: 32%;
+      right: -32%;
+    }
+  }
+}
+@media (min-width: 660px) {
+  .nav {
+    &__links {
+      width: 28%;
+      right: -28%;
+    }
+  }
+}
+// 860-920-940px width is the sallest size of the navbar before it needs to be shrinked
+// 860px+ navbar for desktop
+@media (min-width: 880px) {
+  .nav {
+    &__container {
+      padding: 0 0 0 1rem;
+      // padding: 0 1rem 0 1rem;
+    }
+    &__toggler {
+      display: none;
+    }
+    &__burger {
+      display: none;
+    }
+    &__bars {
+      display: none;
+    }
+    &__menu {
+      height: 100%;
+      display: initial;
+      // visibility: visible;
+    }
+    &__links {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      position: unset;
+      width: initial;
+      padding: 0; // ???
+      background-color: transparent;
+    }
+    &__links--secondary {
+      top: 69px;
+    }
+    &__link-item {
+      height: 100%;
+      // background-color: rgba(236, 39, 250, 0.3);
+      padding: 0 4px 0 0;
+      // &:hover > a {
+      //   color: var(--navbar-text-hover);
+      // }
+      // &:hover > span {
+      //   color: var(--navbar-text-hover);
+      // }
+      // &:hover > ul {
+      //   display: block;
+      //   visibility: visible;
+      // }
+    }
+    // &__link {}
+    &__caret-toggle {
+      // opacity: 1;
+      left: 27px;
+      transform: scale(5.6);
+    }
+    &__caret {
+      display: none;
+      left: 78px;
+      top: 28px;
+    }
+  }
+}

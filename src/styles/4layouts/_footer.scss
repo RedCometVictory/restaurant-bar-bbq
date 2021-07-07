@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+  padding-bottom: 3em;
+  width: 80%;
+  margin: 0 auto;
+  &__social {
+    display: block;
+  }
+  &__social-item {
+    margin: 1rem 0;
+    display: inline-block;
+  }
+  &__social-icon {
+    font-size: 2em;
+    padding: 0 0.6rem;
+  }
+  &__info {
+    display: block;
+    font-size: 0.8em;
+  }
+}

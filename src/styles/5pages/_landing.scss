@@ -1,0 +1,139 @@
+.hero {
+  background-color: yellow;
+  color: blue;
+  height: 100vh;
+  &__container {
+    width: 100%;
+    height: 100%;
+    background: url('/pexels-dima-valkov-3864681.jpg') no-repeat center center/cover;
+  }
+}
+.landing {
+  &__content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  &__section {
+    padding-top: 3rem;
+    margin: 0 auto;
+    &.sec-two {
+      padding-bottom: 3rem;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem 0 0;
+  }
+  &__container-blogs {
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem 0 0;
+  }
+  &__card {
+    width: 100%;
+    margin-bottom: 1.4rem;
+  }
+  &__card-title {
+    padding: 0.5rem 0.6rem;
+  }
+  &__card-image {
+    max-width: 500px;
+  }
+  &__card-description {
+    padding: 0.5rem 0.6rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  &__card-wide {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+    .title {
+      padding: 0.5rem 0.6rem;
+    }
+    .image {
+      border: 1px solid var(--color-text);
+      height: 14rem;
+      width: 100%;
+    }
+    .description {
+      padding: 0.5rem 0.6rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+      p {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+// tablet and small desktop screens
+@media (min-width: 620px) {
+  .landing {
+    &__container {
+      display: grid;
+      grid-template-columns: 48% 48%;
+      justify-content: space-between;
+      margin: initial;
+    }
+    &__card-description {
+      height: 14rem;
+      max-width: 400px
+    }
+    &__container-blogs {
+      display: grid;
+      grid-template-columns: 48% 48%;
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 1rem 0 0;
+    }
+    &__card-wide {
+      max-width: 500px;
+      .image {
+        height: 16rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 920px) {
+  .landing {
+    &__container {
+      grid-template-columns: 32% 32% 32%;
+    }
+  }
+}
+
+// large desktop screens
+@media (min-width: 1420px) {
+  .landing {
+    &__container {
+      grid-template-columns: 32% 32% 32%;
+    }
+    &__container-blogs {
+      display: grid;
+      grid-template-columns: 24% 24% 24% 24%;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 1rem 0 0;
+    }
+    &__card-wide {
+      max-width: 500px;
+      .image {
+        height: 16rem;
+      }
+    }
+  }
+}

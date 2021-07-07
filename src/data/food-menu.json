@@ -1,0 +1,478 @@
+{
+  "sandwiches": [
+    {
+      "title": "Slider Trio",
+      "image": "/foodImg/sandwiches/IMG_4034.jpeg",
+      "description": "Mix N Match your favorite meats on 3 sliders.",
+      "prices": [
+        {
+          "name": "Mix N Match",
+          "price": "$15.00"
+        }
+      ]
+    },
+    {
+      "title": "Buffalo Chicken",
+      "image": "/foodImg/sandwiches/4DA7B867-8F1A-433A-A83B-CC225365B5CD.jpeg",
+      "description": "Cheese-crusted bun topped with chicken tossed in our buffalo sauce, lettuce, tomato and drizzled with ranch dressing!",
+      "prices": [
+        {
+          "name": "Sandwich",
+          "price": "$9.80"
+        }
+      ]
+    },
+    {
+      "title": "Gateway to the Westside",
+      "image": "/foodImg/sandwiches/IMG_3472.jpeg",
+      "description": "Cheese-crusted bun & patty with pulled pork, onion rings and american cheese & drizzled with bbq sauce.",
+      "prices": [
+        {
+          "name": "Brisket",
+          "price": "$12.49"
+        },
+        {
+          "name": "Pulled Pork",
+          "price": "$10.99"
+        }
+      ]
+    },
+    {
+      "title": "Oh My Garlic!",
+      "image": "/foodImg/sandwiches/A5DDFDBE-9F89-4940-827D-E2A572733D8E.jpeg",
+      "description": "Cheese-crusted bun & patty topped with grilled garlic & onion, brisket, garlilc-aoli, and Swiss cheese.",
+      "prices": [
+        {
+          "name": "Brisket",
+          "price": "$12.49"
+        },
+        {
+          "name": "Pulled Pork",
+          "price": "$10.99"
+        }
+      ]
+    },
+    {
+      "title": "Burgers",
+      "image": "/foodImg/sandwiches/IMG_4336.jpeg",
+      "description": "Standard burger with lettuce, onion, tomato & pickle.  Customize the heck out of the build-a-burger!",
+      "prices": [
+        {
+          "name": "Veggie Burger",
+          "price": "$8.99"
+        },
+        {
+          "name": "Lion Burger",
+          "price": "$9.99"
+        },
+        {
+          "name": "Build-A-Burger",
+          "price": "$8.99"
+        }
+      ]
+    },
+    {
+      "title": "Sandwich",
+      "image": "/foodImg/sandwiches/IMG_2550.jpeg",
+      "description": "All sandwiches come with fries.  Sandwich comes with choice of meat, bread and sauce.",
+      "prices": [
+        {
+          "name": "Brisket",
+          "price": "$16.49"
+        },
+        {
+          "name": "Pastrami",
+          "price": "$16.49"
+        },
+        {
+          "name": "Pork Belly BLT",
+          "price": "$14.00"
+        },
+        {
+          "name": "Pulled Pork",
+          "price": "$8.49"
+        },
+        {
+          "name": "Tri Tip",
+          "price": "$14.00"
+        }
+      ]
+    }
+  ],
+  "smokehouse": [
+    {
+      "title": "Ribs",
+      "image": "/foodImg/smokehouse/IMG_3662.jpg",
+      "description": "Pork baby back ribs smoked for 3 hours. You can also order beef ribs 2 days in advance. All new rub for the pork ribs, gotta have it!",
+      "prices": [
+        {
+          "name": "Baby Back (Half)",
+          "price": "$20.99"
+        },
+        {
+          "name": "Baby Back (Full)",
+          "price": "$39.00"
+        },
+        {
+          "name": "Beef Ribs (Full)",
+          "price": "$39.00"
+        }
+      ]
+    },
+    {
+      "title": "Only the Meat",
+      "image": "/foodImg/smokehouse/IMG_5209.jpg",
+      "description": "1/2 LB or full LB of each of our meats. You can also order with a side.",
+      "prices": [
+        {
+          "name": "Brisket",
+          "price": "$14.50",
+          "price2": "$27.00"
+        },
+        {
+          "name": "Pork Belly",
+          "price": "$7.00",
+          "price2": "$12.00"
+        },
+        {
+          "name": "Pulled Pork",
+          "price": "$8.50",
+          "price2": "$14.99"
+        },
+        {
+          "name": "Tri Tip",
+          "price": "$7.00",
+          "price2": "$12.00"
+        }
+      ]
+    },
+    {
+      "title": "Feast for 2",
+      "image": "/foodImg/smokehouse/991A9291-7547-4676-9B4D-E0BB9C950350.jpeg",
+      "description": "Brisket, Baby Back Ribs, Pulled Pork, Chili Beans, Coleslaw & Garlic Bread. Feeds 2 - 3. No Subs.",
+      "prices": [
+        {
+          "name": "Feast for 2",
+          "price": "39.00"
+        }
+      ]
+    },
+    {
+      "title": "Feast for 4",
+      "image": "/foodImg/smokehouse/991A9291-7547-4676-9B4D-E0BB9C950350.jpeg",
+      "description": "Brisket, Ribs, Wings, Tri Tip, Pulled Pork, Chili, Fries, Pickle Fries, Coleslaw & Garlic Bread. Feeds 4 - 6. No Subs",
+      "prices": [
+        {
+          "name": "Feast for 4",
+          "price": "$70.00"
+        }
+      ]
+    }
+  ],
+  "specialties": [
+    {
+      "title": "Loaded Fries",
+      "image": "/foodImg/specialties/IMG_4338.jpeg",
+      "description": "Our fries or tots loaded with meat of your choice. Our famous chipotle sauce drizzled over shredded cheese, with sides of onion, pickles and pepperoncini peppers.",
+      "prices": [
+        {
+          "name": "Pulled Pork",
+          "price": "$10.99"
+        },
+        {
+          "name": "Tri Tip",
+          "price": "$13.49"
+        },
+        {
+          "name": "Brisket",
+          "price": "$15.49"
+        },
+        {
+          "name": "Pork Belly",
+          "price": "$15.49"
+        }
+      ]
+    },
+    {
+      "title": "Tacos",
+      "image": "/foodImg/specialties/5C2F2BDB-9796-4316-9E0A-CC51335ACE60.jpeg",
+      "description": "Tacos with your choice of meat, lettuce, onion and chipotle sauce.",
+      "prices": [
+        {
+          "name": "1 Taco",
+          "price": "$3.54"
+        },
+        {
+          "name": "Add Cheese",
+          "price": "+$0.45"
+        },
+        {
+          "name": "Add Keto Style",
+          "price": "+$0.89"
+        }
+      ]
+    },
+    {
+      "title": "Carnivore Quesadilla",
+      "image": "/foodImg/specialties/IMG_3424.jpeg",
+      "description": "Monterey/Cheddar cheese mix quesadillas Served with chipotle sauce and your choice of tri-tip, pulled pork, brisket or pork belly.",
+      "prices": [
+        {
+          "name": "Veggie",
+          "price": "$8.60"
+        },
+        {
+          "name": "Pulled Pork",
+          "price": "$8.99"
+        },
+        {
+          "name": "Tri Tip",
+          "price": "$11.49"
+        },
+        {
+          "name": "Pork Belly",
+          "price": "$12.49"
+        },
+        {
+          "name": "Brisket",
+          "price": "$13.49"
+        }
+      ]
+    },
+    {
+      "title": "Green Salad",
+      "image": "/foodImg/specialties/7B24AE83-67B0-4E58-AB5C-AB298A2104C0.jpeg",
+      "description": "Chopped romaine lettuce, shredded cheese, cucumbers, tomato, red onion, carrots, and waxed peppers. You can also add meat to it for a tastier choice.",
+      "prices": [
+        {
+          "name": "Veggie",
+          "price": "$8.60"
+        },
+        {
+          "name": "Pulled Pork",
+          "price": "$8.99"
+        },
+        {
+          "name": "Tri Tip",
+          "price": "$10.49"
+        },
+        {
+          "name": "Pork Belly",
+          "price": "$10.49"
+        },
+        {
+          "name": "Brisket",
+          "price": "$12.49"
+        }
+      ]
+    }
+  ],
+  "sides": [
+    {
+      "title": "Potato Salad",
+      "image": "/foodImg/sides/6D3E8242-1C50-44EB-8350-47771022120F.jpg",
+      "description": "House-made Potato Salad.",
+      "prices": [
+        {
+          "name": "Regular",
+          "price": "$4.35"
+        },
+        {
+          "name": "Large",
+          "price": "$7.07"
+        }
+      ]
+    },
+    {
+      "title": "Onion Rings",
+      "image": "/foodImg/sides/IMG_4875.jpeg",
+      "description": "Beer battered onion rings.",
+      "prices": [
+        {
+          "name": "Regular",
+          "price": "$4.35"
+        },
+        {
+          "name": "Large",
+          "price": "$7.07"
+        }
+      ]
+    },
+    {
+      "title": "Pickle Fries",
+      "image": "/foodImg/sides/6722D7E1-D58B-48BC-A7BF-3A736AE6BA68.jpeg",
+      "description": "Pickle strips, battered and deep fried. Slight spice to them.",
+      "prices": [
+        {
+          "name": "Regular",
+          "price": "$4.85"
+        },
+        {
+          "name": "Large",
+          "price": "$6.99"
+        }
+      ]
+    },
+    {
+      "title": "Fries",
+      "image": "/foodImg/sides/IMG_5165.jpg",
+      "description": "Fries by themselves or tossed with minced garlic or chipotle.",
+      "prices": [
+        {
+          "name": "Regular",
+          "price": "$4.35"
+        },
+        {
+          "name": "Large",
+          "price": "$7.07"
+        },
+        {
+          "name": "Add Garlic",
+          "price": "+$0.79"
+        }
+      ]
+    },
+    {
+      "title": "Coleslaw",
+      "image": "/foodImg/sides/IMG_4878.jpeg",
+      "description": "Always fresh, made to order!",
+      "prices": [
+        {
+          "name": "Regular",
+          "price": "$4.35"
+        },
+        {
+          "name": "Large",
+          "price": "$6.49"
+        }
+      ]
+    },
+    {
+      "title": "Totz",
+      "image": "/foodImg/sides/IMG_4877.jpeg",
+      "description": "Crispy Tater Totz.",
+      "prices": [
+        {
+          "name": "Regular",
+          "price": "$4.35"
+        },
+        {
+          "name": "Large",
+          "price": "$7.07"
+        }
+      ]
+    },
+    {
+      "title": "Mac N Cheese",
+      "image": "/foodImg/sides/IMG_5143.jpg",
+      "description": "BBQ always goes good with Mac N Cheese.",
+      "prices": [
+        {
+          "name": "Regular",
+          "price": "$5.69"
+        },
+        {
+          "name": "Large",
+          "price": "$8.69"
+        }
+      ]
+    }
+  ],
+  "appetizers": [
+    {
+      "title": "Jalapeño Poppers",
+      "image": "/foodImg/appetizers/IMG_1946.jpeg",
+      "description": "Hand picked Jalapeño peppers, stuffed with cheese and wrapped with bacon.  Either smoked or deep fried.",
+      "prices": [
+        {
+          "name": "2 Poppers",
+          "price": "$4.35"
+        },
+        {
+          "name": "4 Poppers",
+          "price": "$7.62"
+        }
+      ]
+    },
+    {
+      "title": "Chili Beans",
+      "image": "/foodImg/appetizers/IMG_2240.jpeg",
+      "description": "Chili Beans made with our delicious brisket or Tri Tip.",
+      "prices": [
+        {
+          "name": "Regular",
+          "price": "$6.49"
+        },
+        {
+          "name": "Large",
+          "price": "$9.80"
+        }
+      ]
+    },
+    {
+      "title": "Corn Dog Bites",
+      "image": "/foodImg/appetizers/IMG_3591D.jpeg",
+      "description": "Yummy, corn dog bites.",
+      "prices": [
+        {
+          "name": "10 pc",
+          "price": "$8.79"
+        }
+      ]
+    },
+    {
+      "title": "Wings",
+      "image": "/foodImg/appetizers/IMG_3079.jpeg",
+      "description": "Wings rubbed or tossed in buffalo sauce, our own Den A/P rub, BBQ or chipotle.",
+      "prices": [
+        {
+          "name": "20 Wings",
+          "price": "$33.00"
+        },
+        {
+          "name": "10 Wings",
+          "price": "$17.00"
+        },
+        {
+          "name": "6 Wings",
+          "price": "$11.00"
+        }
+      ]
+    }
+  ],
+  "kidsmeals": [
+    {
+      "title": "Chicken Tenders",
+      "image": "/foodImg/kids-meals/48C62FF8-A1F5-4159-95FB-5B6AC72D0D84.jpeg",
+      "description": "2 golden fried chicken tenders served with fries.",
+      "prices": [
+        {
+          "name": "Brisket",
+          "price": "$6.50"
+        }
+      ]
+    },
+    {
+      "title": "Cub Burger",
+      "image": "/foodImg/kids-meals/IMG_4844.jpeg",
+      "description": "A single slider burger with fries.  Get it made the way you like.",
+      "prices": [
+        {
+          "name": "Cub Burger Meal",
+          "price": "$6.50"
+        }
+      ]
+    },
+    {
+      "title": "Corn Dog Bites & Fries",
+      "image": "/foodImg/kids-meals/IMG_5203.jpg",
+      "description": "6 Corn Dog bites with fries.",
+      "prices": [
+        {
+          "name": "Corn Dog Bites Meal",
+          "price": "$6.50"
+        }
+      ]
+    }
+  ]
+}

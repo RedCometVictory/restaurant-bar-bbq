@@ -1,0 +1,558 @@
+{
+  "houseBeer" : [
+    {
+      "title": "2 Year Anniversary",
+      "image": "/beerImg/home-beer/IMG_4829.jpeg",
+      "style": "BA Stout",
+      "abv": "13.80",
+      "description": "Imperial Stout aged in Jack Daniels whiskey barrels. Rich and decadent.",
+      "prices": [
+        {
+          "name": "4 oz",
+          "price": "$3.54"
+        },
+        {
+          "name": "8 oz",
+          "price": "$6.00"
+        },
+        {
+          "name": "12 oz",
+          "price": "$8.00"
+        },
+        {
+          "name": "Crowler",
+          "price": "$15.00"
+        }
+      ]
+    },
+    {
+      "title": "Schwarz",
+      "image": "/beerImg/home-beer/DF1FA610-0E8B-4C9C-A106-DFE2CCED69EF.jpeg",
+      "style": "Schwarzbier",
+      "abv": "7.00",
+      "description": "German style dark ale. Light and refreshing, but dark!",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$5.45"
+        },
+        {
+          "name": "16 oz",
+          "price": "$7.00"
+        },
+        {
+          "name": "Crowler",
+          "price": "$10.00"
+        },
+        {
+          "name": "32 oz Refill",
+          "price": "$10.00"
+        },
+        {
+          "name": "64 oz Refill",
+          "price": "$16.00"
+        }
+      ]
+    },
+    {
+      "title": "Den New IPA",
+      "image": "/beerImg/home-beer/860DE8E5-8160-4DB9-BA2C-B72756E3C67C.jpeg",
+      "style": "IPA",
+      "abv": "6.93",
+      "description": "Has a nice fruity / juicy taste and aroma. Get it now, we might not make it again.",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$7.00"
+        },
+        {
+          "name": "16 oz",
+          "price": "$8.00"
+        },
+        {
+          "name": "Crowler",
+          "price": "$13.00"
+        },
+        {
+          "name": "32 oz Refill",
+          "price": "$13.00"
+        }
+      ]
+    },
+    {
+      "title": "Dos Topa",
+      "image": "/beerImg/home-beer/ab16485e208329dc067e6e50b8dea036_640x640.jpg",
+      "style": "Lager",
+      "abv": "4.50",
+      "description": "Topa Topa.",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$3.00"
+        },
+        {
+          "name": "16 oz",
+          "price": "$4.00"
+        },
+        {
+          "name": "20 oz",
+          "price": "$5.00"
+        }
+      ]
+    },
+    {
+      "title": "Barrel Aged Kraisin",
+      "image": "/beerImg/home-beer/IMG_4218D.jpeg",
+      "style": "Porter",
+      "abv": "8.00",
+      "description": "Robust Porter made with molasses and locally grown raisins. Rich, dark, and easy. Aged in Jack Daniels barrels for about a year. Has some sour notes to the back end.",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$5.45"
+        },
+        {
+          "name": "16 oz",
+          "price": "$7.00"
+        },
+        {
+          "name": "Crowler",
+          "price": "$11.00"
+        },
+        {
+          "name": "32 oz Refill",
+          "price": "$11.00"
+        },
+        {
+          "name": "64 oz Refill",
+          "price": "$17.00"
+        }
+      ]
+    },
+    {
+      "title": "Excellent IPA",
+      "image": "/beerImg/home-beer/1BEEBB98-2E24-4CA6-962B-E3DAA601B636.png",
+      "style": "NEIPA",
+      "abv": "7.00",
+      "description": "Lots of strawberry and Galaxy goodness!  This is pleasing to the tongue.",
+      "prices": [
+        {
+          "name": "8 oz",
+          "price": "$3.00"
+        },
+        {
+          "name": "12 oz",
+          "price": "$3.50"
+        },
+        {
+          "name": "16 oz",
+          "price": "$5.00"
+        }
+      ]
+    },
+    {
+      "title": "The Honey Do",
+      "image": "/beerImg/home-beer/IMG_3776.jpg",
+      "style": "Honey Blonde",
+      "abv": "7.68",
+      "description": "Our flagship blonde ale brewed with locally sourced honey. This beer is straight outta Kerman.",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$4.00"
+        },
+        {
+          "name": "16 oz",
+          "price": "$5.00"
+        },
+        {
+          "name": "Crowler",
+          "price": "$9.00"
+        },
+        {
+          "name": "32 oz Refill",
+          "price": "$9.25"
+        },
+        {
+          "name": "64 oz Refill",
+          "price": "$16.35"
+        }
+      ]
+    },
+    {
+      "title": "Mendota Slough",
+      "image": "/beerImg/home-beer/IMG_4396.jpeg",
+      "style": "Brown Ale",
+      "abv": "6.40",
+      "description": "Nothing says brown like the Mendota Slough. This, though, is yummy brown-ness. Loads of caramel and roasted flavors.",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$5.45"
+        },
+        {
+          "name": "16 oz",
+          "price": "$7.00"
+        },
+        {
+          "name": "Crowler",
+          "price": "$10.00"
+        },
+        {
+          "name": "32 oz Refill",
+          "price": "$10.00"
+        },
+        {
+          "name": "64 oz Refill",
+          "price": "$16.00"
+        }
+      ]
+    }
+  ],
+  "guestBeer" : [
+    {
+      "title": "Gnoel De Abby",
+      "image": "/beerImg/guest-beer/New_gnoel.jpg",
+      "style": "Brown Ale",
+      "abv": "8.50",
+      "description": "",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$5.00"
+        },
+        {
+          "name": "16 oz",
+          "price": "$7.00"
+        },
+        {
+          "name": "20 oz",
+          "price": "$8.50"
+        }
+      ]
+    },
+    {
+      "title": "Prickly Pearadise",
+      "image": "/beerImg/guest-beer/0085289200382.jpeg",
+      "style": "Cider",
+      "abv": "5.30",
+      "description": "2 Towns Ciderhouse",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$3.50"
+        },
+        {
+          "name": "16 oz",
+          "price": "$4.50"
+        },
+        {
+          "name": "20 oz",
+          "price": "$6.00"
+        }
+      ]
+    },
+    {
+      "title": "Disco Ninja",
+      "image": "/beerImg/guest-beer/unnamed.png",
+      "style": "NEIPA",
+      "abv": "7.00",
+      "description": "",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$4.50"
+        },
+        {
+          "name": "16 oz",
+          "price": "$6.50"
+        },
+        {
+          "name": "20 oz",
+          "price": "$8.00"
+        }
+      ]
+    },
+    {
+      "title": "Frucht: Boysenberry",
+      "image": "/beerImg/guest-beer/c7a0e884a6001c5e1aa08701c7093cde_1280x1280.jpg",
+      "style": "Sour",
+      "abv": "5.00",
+      "description": "The Bruery",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$7.50"
+        }
+      ]
+    },
+    {
+      "title": "Hold the Spoon: Black Chocolate Cake",
+      "image": "/beerimg/guest-beer/hold-the-spoon-black-chocolate-cake_1400x1400.png",
+      "style": "Imperial Milk Stout",
+      "abv": "8.50",
+      "description": "The Bruery",
+      "prices": [
+        {
+          "name": "4 oz",
+          "price": "$3.00"
+        },
+        {
+          "name": "8 oz",
+          "price": "$6.50"
+        },
+        {
+          "name": "12 oz",
+          "price": "$10.00"
+        }
+      ]
+    },
+    {
+      "title": "Terrifico",
+      "image": "/beerImg/guest-beer/309559.jpg",
+      "style": "Mexican Lager",
+      "abv": "4.90",
+      "description": "Central Coast Brewing",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$3.50"
+        },
+        {
+          "name": "16 oz",
+          "price": "$5.00"
+        },
+        {
+          "name": "20 oz",
+          "price": "$6.50"
+        }
+      ]
+    },
+    {
+      "title": "Pina Bomb",
+      "image": "/beerImg/guest-beer/sketch-1621655095864.png",
+      "style": "NEIPA",
+      "abv": "9.20",
+      "description": "Full Circle Brewing Co.",
+      "prices": [
+        {
+          "name": "8 oz",
+          "price": "$5.00"
+        },
+        {
+          "name": "12 oz",
+          "price": "$7.00"
+        },
+        {
+          "name": "16 oz",
+          "price": "$10.00"
+        }
+      ]
+    },
+    {
+      "title": "Peach Illa",
+      "image": "/beerImg/guest-beer/Full-Circle-Peaches-N-Cream-Illa-Milkshake-IPA-4PK-16OZ-CAN_620x.jpg",
+      "style": "NEIPA",
+      "abv": "6.50",
+      "description": "Full Circle Brewing Co.",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$3.50"
+        },
+        {
+          "name": "16 oz",
+          "price": "$5.00"
+        },
+        {
+          "name": "20 oz",
+          "price": "$6.50"
+        }
+      ]
+    }
+  ],
+  "cans" : [
+    {
+      "title": "Seasider's SMASH",
+      "image": "/beerImg/cans/7ce19fb6500c76625a3b68271806a36b_640x640.jpg",
+      "style": "Pale Ale",
+      "abv": "5.50",
+      "description": "Other Brother Beer Co.",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$6.75"
+        }
+      ]
+    },
+    {
+      "title": "Herman's Lager",
+      "image": "/beerImg/cans/OB_pdp_Heermannswoocommerce.jpg",
+      "style": "Pilsner",
+      "abv": "4.80",
+      "description": "Other Brother Beer Co.",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$6.75"
+        }
+      ]
+    },
+    {
+      "title": "Wise Little Toad",
+      "image": "/beerImg/cans/1384f24de6d8ea61a8b3c67866ca863f_640x640.jpg",
+      "style": "Hefeweizen",
+      "abv": "5.10",
+      "description": "Other Brother Beer Co.",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$6.75"
+        }
+      ]
+    },
+    {
+      "title": "Helles Bueno",
+      "image": "/beerImg/cans/santa-maria-hells_1200x1200.jpg",
+      "style": "Keller Helles",
+      "abv": "4.50",
+      "description": "Santa Maria Brewing Co.",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$5.50"
+        }
+      ]
+    },
+    {
+      "title": "Broken Skull IPA",
+      "image": "/beerImg/cans/IMG_3639-700x700.jpg",
+      "style": "IPA",
+      "abv": "6.70",
+      "description": "El Segundo Brewing Co.",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$6.50"
+        }
+      ]
+    },
+    {
+      "title": "Black House",
+      "image": "/beerImg/cans/moderntimesblackhouse.jpg",
+      "style": "Stout",
+      "abv": "5.80",
+      "description": "Modern Times",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$5.50"
+        }
+      ]
+    },
+    {
+      "title": "Hot Break",
+      "image": "/beerImg/cans/little-beast-hot-break-4pack-cans_1600x.jpg",
+      "style": "Sour Ale",
+      "abv": "4.80",
+      "description": "Little Beast Brewing",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$7.00"
+        }
+      ]
+    },
+    {
+      "title": "Tropical Galaxy",
+      "image": "/beerImg/cans/Almanac+Beer+Co.+Tropical+Galaxy+Poster+by+DKNG.jpeg",
+      "style": "Saison",
+      "abv": "5.30",
+      "description": "Almanac Beer Co.",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$8.00"
+        }
+      ]
+    },
+    {
+      "title": "Wicked Razz",
+      "image": "/beerImg/cans/20210508_132529.jpg",
+      "style": "Sour",
+      "abv": "6.70",
+      "description": "Liquid Gravity",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$8.00"
+        }
+      ]
+    },
+    {
+      "title": "Piña Bomb",
+      "image": "/beerImg/cans/beer-3186276_99081_hd.jpeg",
+      "style": "NEIPA",
+      "abv": "9.20",
+      "description": "Full Brewing Co.",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$8.50"
+        }
+      ]
+    },
+    {
+      "title": "Tropical Teaki",
+      "image": "/beerImg/cans/BHBC_2020_TEAKISERIES_TEAKIHULAHOUSE_12oz_SPECIALTYCAN-REND-6PCK-web.png",
+      "style": "Seltzer",
+      "abv": "4.80",
+      "description": "Barrelhouse Brewing Co.",
+      "prices": [
+        {
+          "name": "12 oz",
+          "price": "$7.50"
+        }
+      ]
+    },
+    {
+      "title": "Peach Sournova",
+      "image": "/beerImg/cans/beer-2916766_55bef_hd.jpeg",
+      "style": "Fruited Sour",
+      "abv": "5.80",
+      "description": "",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$7.50"
+        }
+      ]
+    },
+    {
+      "title": "Full Tilt Boogie",
+      "image": "/beerImg/cans/b-almanacFullTiltBoogie16oz-2.jpg",
+      "style": "2x NEIPA",
+      "abv": "8.00",
+      "description": "Almanac.",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$7.50"
+        }
+      ]
+    },
+    {
+      "title": "The Tell-Tale Heart",
+      "image": "/beerImg/cans/The+Tell-Tale+Heart-2Can.png",
+      "style": "Pale Ale",
+      "abv": "6.00",
+      "description": "Jackrabbit Brewing Co.",
+      "prices": [
+        {
+          "name": "16 oz",
+          "price": "$7.00"
+        }
+      ]
+    }
+  ]
+}
