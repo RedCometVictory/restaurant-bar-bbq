@@ -24,7 +24,7 @@
   &__icon {
     width: 60px;
     height: 60px;
-    color: var(--navbar-text);
+    color: var(--color-logo);
     // img {}
   }
   &__title-container {
@@ -32,6 +32,7 @@
     margin-right: 6px;
     display: flex;
     visibility: hidden;
+    color: var(--navbar-title);
   }
   &__title {
     line-height: initial;
@@ -98,7 +99,7 @@
     position: absolute;
     width: 70%;
     height: 100vh;
-    background-color: var(--navbar-color-a);
+    background-color: var(--navbar-color);
     top: 70px;
     color: black;
     right: -70%;

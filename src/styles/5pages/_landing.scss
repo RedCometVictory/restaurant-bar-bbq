@@ -7,6 +7,28 @@
     height: 100%;
     background: url('/pexels-dima-valkov-3864681.jpg') no-repeat center center/cover;
   }
+  &__contact {
+    // height: 120px;
+    // width: 300px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: var(--navbar-color-a);
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    justify-content: center;
+  }
+  &__btn {
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 6px;
+    color: white;
+    margin-right: 12px;
+    font-weight: 700;
+    background-color: var(--navbar-brand);
+  }
 }
 .landing {
   &__content {
@@ -107,7 +129,16 @@
     }
   }
 }
-
+@media (min-width: 420px) {
+  .hero {
+    &__contact {
+      width: initial;
+      -webkit-border-bottom-left-radius: 12px;
+      -moz-border-radius-bottomleft: 12px;
+      border-bottom-left-radius: 12px;
+    }
+  }
+}
 @media (min-width: 920px) {
   .landing {
     &__container {

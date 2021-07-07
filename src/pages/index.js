@@ -18,6 +18,24 @@ export default function Home({ data }) {
       <main className="landing" >
         <section className="hero">
           <div className="hero__container">
+            <div className="hero__contact">
+              <a href="https://toasttakeout.com/">
+                <div className="hero__btn">
+                  Mobile App
+                </div>
+              </a>
+              <a href="https://www.toasttab.com/thedenbrews">
+                <div className="hero__btn">
+                  Order Online!
+                </div>
+              </a>
+              <a href="tel:+15597553412">
+                <div className="hero__btn">
+                  (559) 755-3412
+                </div>
+              </a>
+            </div>
+            <div className="hero_info"></div>
           {/* alt value still appears */}
             {/* <img className="hero__container-img" src="/img/pexels-dima-valkov-3864681" alt="landing" /> */}
           </div>
