@@ -1,16 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/styles.scss";
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+// import { convertToBgImage } from 'gbimage-bridge';
+import { BgImage } from 'gbimage-bridge';
+// import BackgroundImage from "gatsby-background-image";
 import NavBar from "../components/NavBar";
 import Footer from '../components/Footer';
 
 export default function Home({ data }) {
   const blogs = data.blogs.edges;
   const weeklys = data.weekly.edges;
+  // const slides = data.slide.edges;
+  const slides = data.slide.edges;
   // example of graphql, be sure to import graphql from gatsby, extract info from query via data prop
   // this is a dynamic "page" query (located at the bottom of the page), also known as page components, that can make use of query variables unike "useStaticQuery", a static query is much more limited in how it works and cannot make use of query variables and another thing is that static queries are prone to errors (seemingly random). More stable if used in components that have Capitalized names. Finally a static query can only be used once inside of a component.
+
+  const [index, setIndex] = useState(0);
+
+  const duration = 10000; // in ms ~ 10 secs
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (index === 2) { // total number of images - 1
+        setIndex(0);
+      } else {
+        setIndex(prev => prev + 1);
+      }
+    }, duration);
+    return () => clearInterval(timer); // cleanup
+  }, [index])
+
+  // for use with <BackgroundImage>
+  // let image = getImage(slides[index].node.frontmatter.featureImage);
+  // let bgImage = convertToBgImage(image);
+
+  // for use with <BgImage>
+  // let pluginImage = getImage(slides[index].node.frontmatter.featureImage);
+  // let bgImage = convertToBgImage(image);
 
   return (
     <>
@@ -18,6 +45,7 @@ export default function Home({ data }) {
       <main className="landing" >
         <section className="hero">
           <div className="hero__container">
+            <BgImage image={getImage(slides[index].node.frontmatter.featureImage)} alt={slides[index].node.frontmatter.title} className="slide-image" />
             <address>
               <div className="hero__contact">
                 <a href="https://toasttakeout.com/">
@@ -37,7 +65,30 @@ export default function Home({ data }) {
                 </a>
               </div>
             </address>
-            <div className="hero_info"></div>
+            <div className="hero__info">
+              <div className="hero__title">
+                <h2>
+                  {slides[index].node.frontmatter.title}
+                </h2>
+              </div>
+              <div className="hero__description">
+                <MDXRenderer>
+                  {slides[index].node.body}
+                </MDXRenderer>
+              </div>
+            </div>
+            <div className="hero__slide-container">
+              
+              {/* <BackgroundImage
+                Tag="section"
+                {...bgImage}
+                preserveStackingContent
+              >
+                Carousel
+              </BackgroundImage> */}
+              {/* <GatsbyImage className="slide-image" image={getImage(slides[index].node.frontmatter.featureImage)} alt={slides[index].node.frontmatter.title} /> */}
+              
+            </div>
           </div>
           {/* alt value still appears */}
             {/* <img className="hero__container-img" src="/img/pexels-dima-valkov-3864681" alt="landing" /> */}
@@ -140,5 +191,55 @@ export const query = graphql`
         }
       }
     }
+    slide: allMdx(filter: {fileAbsolutePath: {regex: "/src/slideshow/"}}, sort: {order: ASC, fields: id}) {
+      edges {
+        node {
+          id
+          body
+          frontmatter {
+            title
+            slug
+            featureImage {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: TRACED_SVG
+                  transformOptions: {fit: COVER, cropFocus: CENTER}
+                  formats: [AUTO, WEBP]
+                )
+              }
+            }
+          }
+        }
+      }
+    }
   }
 `;
+// , cropFocus: CENTER
+// layout: FULL_WIDTH
+/*
+export const pageQuery = graphql`
+  query {
+    slideShow: allFile(
+      filter: {relativeDirectory: {eq: "puerto-rico"}}
+      sort: {fields: base, order: ASC}
+    ) {
+      edges {
+        node {
+          id
+          base
+          childImageSharp {
+            gatsbyImageData(
+              height: 600
+              width: 900
+              placeholder: BLURRED
+              quality: 70
+              blurredOptions: {width: 100}
+              transformOptions: {cropFocus: CENTER, fit: COVER}
+            )
+          }
+        }
+      }
+    }
+  }
+`
+*/
