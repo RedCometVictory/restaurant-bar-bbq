@@ -8,14 +8,16 @@ import { BgImage } from 'gbimage-bridge';
 // import BackgroundImage from "gatsby-background-image";
 import NavBar from "../components/NavBar";
 import Footer from '../components/Footer';
+import { ThemeProvider } from '../context/ThemeContext';
 
 export default function Home({ data }) {
   const blogs = data.blogs.edges;
   const weeklys = data.weekly.edges;
-  // const slides = data.slide.edges;
   const slides = data.slide.edges;
   // example of graphql, be sure to import graphql from gatsby, extract info from query via data prop
   // this is a dynamic "page" query (located at the bottom of the page), also known as page components, that can make use of query variables unike "useStaticQuery", a static query is much more limited in how it works and cannot make use of query variables and another thing is that static queries are prone to errors (seemingly random). More stable if used in components that have Capitalized names. Finally a static query can only be used once inside of a component.
+  const [hasMounted, setHasMounted] = React.useState(false);
+  
 
   const [index, setIndex] = useState(0);
 
@@ -30,7 +32,12 @@ export default function Home({ data }) {
     }, duration);
     return () => clearInterval(timer); // cleanup
   }, [index])
-
+useEffect(() => {
+    setHasMounted(true);
+  }, []);
+  if (!hasMounted) {
+    return null;
+  }
   // for use with <BackgroundImage>
   // let image = getImage(slides[index].node.frontmatter.featureImage);
   // let bgImage = convertToBgImage(image);
@@ -41,6 +48,9 @@ export default function Home({ data }) {
 
   return (
     <>
+    <ThemeProvider>
+
+    
       <NavBar />
       <main className="landing" >
         <section className="hero">
@@ -138,6 +148,7 @@ export default function Home({ data }) {
         </section>
       </main>
       <Footer/>
+      </ThemeProvider>
     </>
   )
 }
@@ -167,7 +178,7 @@ export const query = graphql`
         }
       }
     }
-    weekly: allMdx(filter: {fileAbsolutePath: {regex: "/src/weeklyspecials/"}}) {
+    weekly: allMdx(filter: {fileAbsolutePath: {regex: "/src/weeklyspecials/"}}, sort: { fields: frontmatter___slug}) {
       edges {
         node {
           id

@@ -1,19 +1,69 @@
-import React from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { Link } from 'gatsby';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { FaCaretDown, FaBars } from 'react-icons/fa';
+import { FaCaretDown, FaBars, FaRegSun, FaRegMoon } from 'react-icons/fa';
 // import { FaBars } from 'react-icons/fa';
 // import headOnly from '..//headOnly.svg';
 import HeadOnly from '../../static/assets/headOnly.svg';
 // import HeadOnly from '../../static/headOnly.svg';
+// import ModeButton from './ModeButton';
+import { ModeButton } from './ModeButton';
+// context
+// import { ModeContext } from '../context/ModeProvider';
 
+
+// import { FaRegSun, FaRegMoon } from 'react-icons/fa';
+/* WORKS BEST SO FAR------------------------------
+const themeType = {
+  dark: 'dark',
+  light: 'light'
+};
+*/
 export default function NavBar() {
+  /* WORKS BEST SO FAR--------------------------
+  // prevent flash of incorrect theme
+  const [ mode, setMode ] = useState(() => {
+    // chack for gatsby and nodejs
+    if (typeof window !== 'undefined') {
+      const val = localStorage.getItem('theme');
+      return val ? JSON.parse(val) : themeType.light;
+    }
+    return themeType.light;
+  });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', JSON.stringify(mode));
+    }
+  }, [mode]);
+
+  const toggleMode = () => {
+    setMode(mode === themeType.light ? themeType.dark : themeType.light);
+  }
+*/
+  // **set theme via cpntext, use state provided by the context component
+  // const [darkMode, setDarkMode] = useContext(ModeContext);
+  // setter may be unessesary penfdning on the component passed to and collected from
+  // const [darkMode] = useContext(ModeContext);
+  // ** wrapp all content in context for theme to take effect
+  // <ThemeProvider theme={root.dark}
+  // -------------------------------------
+  // import {modeContext} , them using the react helmet plugin's helmet provider, pass into it the prop theme={darkTheme}, wehich is the setter value from the context state  , pass the value from the context global state to the html elem (root), perhaps try wrapping the index landing and gthe main layout in this
+  // <HelmetProvider>
+  // <HelmetProvider theme={darkMode ? dark : light}>
+  const [hasMounted, setHasMounted] = React.useState(false);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+  if (!hasMounted) {
+    return null;
+  }
   return (
     <HelmetProvider>
       <header className="nav nav__header">
-        <Helmet>
-          {/* <html className={colorTheme} /> */}
-        </Helmet>
+        {/* <Helmet> */}
+          {/* <html className={mode} /> */}
+        {/* </Helmet> */}
         <div className="nav__brand">
           <div className="nav__icon">
             <HeadOnly className="nav__icon" stroke="currentColor" fill="currentColor" />
@@ -90,6 +140,40 @@ export default function NavBar() {
               </li>
             </ul>
           </nav>
+          {/* <div className="nav__theme-select" onClick={toggleMode}> */}
+          <div className="nav__theme-select" >
+            <ModeButton />
+            {/* {mode === themeType.light ? <FaRegMoon /> : <FaRegSun />} */}
+            {/* {colorTheme === 'light' ? <FaRegSun className="nav__theme-btn" onClick={() => themeSelect('dark')} /> : <FaRegMoon className="nav__theme-btn" onClick={() => themeSelect('light')} />} */}
+          </div>
+          {/* {theme === 'light' ? <FaRegSun className="nav__theme-btn" onClick={() => themeSelect('dark')} /> : <FaRegMoon className="nav__theme-btn" onClick={() => themeSelect('light')} />} */}
+          {/* <ModeButton theme={colorTheme} /> */}
+          {/* pass in state and setter */}
+          {/* <ModeButton darkMode={darkMode} setDarkMode={setDarkMode} /> */}
+          {/* <input type="checkbox" id="theme-toggle" className="theme-toggler"/>
+      <label htmlFor='theme-toggle' className="theme-selection">
+        <span className="fas fa-caret-down"></span>
+        {/* <span className="caret"></span> 
+      </label>
+      <div className="theme theme-container">
+        <ul className="theme__item-list dropdown">
+          <li className="theme__item active" onClick={() => themeSelect('light')}>
+            <div className="theme__link light"></div>
+          </li>
+          <li className="theme__item active" onClick={() => themeSelect('dark')}>
+            <div className="theme__link dark"></div>
+          </li>
+          <li className="theme__item active" onClick={() => themeSelect('purple-prime')}>
+            <div className="theme__link purple-prime"></div>
+          </li>
+          <li className="theme__item active" onClick={() => themeSelect('bee')}>
+            <div className="theme__link bee"></div>
+          </li>
+          <li className="theme__item active" onClick={() => themeSelect('redcomet')}>
+            <div className="theme__link redcomet"></div>
+          </li>
+        </ul>
+      </div> */}
           {/* <FaCaretDown/> */}
         </div>
         {/* <div className="theme-toggler">
