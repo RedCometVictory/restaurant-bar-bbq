@@ -14,11 +14,8 @@ export default function Home({ data }) {
   const blogs = data.blogs.edges;
   const weeklys = data.weekly.edges;
   const slides = data.slide.edges;
-  // example of graphql, be sure to import graphql from gatsby, extract info from query via data prop
-  // this is a dynamic "page" query (located at the bottom of the page), also known as page components, that can make use of query variables unike "useStaticQuery", a static query is much more limited in how it works and cannot make use of query variables and another thing is that static queries are prone to errors (seemingly random). More stable if used in components that have Capitalized names. Finally a static query can only be used once inside of a component.
+  // extract info from query via data prop, dynamic "page" query (located at the bottom of the page), a static query is limited in how it works & cannot make use of query variables, also static queries are prone to errors (seemingly random). More stable if used in components that have Capitalized names. Finally a static query can only be used once inside of a component.
   const [hasMounted, setHasMounted] = React.useState(false);
-  
-
   const [index, setIndex] = useState(0);
 
   const duration = 10000; // in ms ~ 10 secs
@@ -31,26 +28,17 @@ export default function Home({ data }) {
       }
     }, duration);
     return () => clearInterval(timer); // cleanup
-  }, [index])
-useEffect(() => {
+  }, [index]);
+  useEffect(() => {
     setHasMounted(true);
   }, []);
   if (!hasMounted) {
     return null;
   }
-  // for use with <BackgroundImage>
-  // let image = getImage(slides[index].node.frontmatter.featureImage);
-  // let bgImage = convertToBgImage(image);
-
-  // for use with <BgImage>
-  // let pluginImage = getImage(slides[index].node.frontmatter.featureImage);
-  // let bgImage = convertToBgImage(image);
 
   return (
     <>
     <ThemeProvider>
-
-    
       <NavBar />
       <main className="landing" >
         <section className="hero">
@@ -87,21 +75,7 @@ useEffect(() => {
                 </MDXRenderer>
               </div>
             </div>
-            <div className="hero__slide-container">
-              
-              {/* <BackgroundImage
-                Tag="section"
-                {...bgImage}
-                preserveStackingContent
-              >
-                Carousel
-              </BackgroundImage> */}
-              {/* <GatsbyImage className="slide-image" image={getImage(slides[index].node.frontmatter.featureImage)} alt={slides[index].node.frontmatter.title} /> */}
-              
-            </div>
           </div>
-          {/* alt value still appears */}
-            {/* <img className="hero__container-img" src="/img/pexels-dima-valkov-3864681" alt="landing" /> */}
         </section>
         <section className="landing__content">
           <div className="landing__section">
@@ -225,32 +199,3 @@ export const query = graphql`
     }
   }
 `;
-// , cropFocus: CENTER
-// layout: FULL_WIDTH
-/*
-export const pageQuery = graphql`
-  query {
-    slideShow: allFile(
-      filter: {relativeDirectory: {eq: "puerto-rico"}}
-      sort: {fields: base, order: ASC}
-    ) {
-      edges {
-        node {
-          id
-          base
-          childImageSharp {
-            gatsbyImageData(
-              height: 600
-              width: 900
-              placeholder: BLURRED
-              quality: 70
-              blurredOptions: {width: 100}
-              transformOptions: {cropFocus: CENTER, fit: COVER}
-            )
-          }
-        }
-      }
-    }
-  }
-`
-*/

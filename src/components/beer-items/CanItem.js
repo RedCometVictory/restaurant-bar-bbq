@@ -1,9 +1,6 @@
 import React from 'react';
 import { FaAngleUp } from 'react-icons/fa';
 
-// export default function CanItem({
-//   can: { title, image, description, prices }
-// }) {
 export default function CanItem({
   can: { title, image, description, prices }
 }) {
@@ -32,4 +29,4 @@ export default function CanItem({
       </div>
     </div>
   )
-}
+};

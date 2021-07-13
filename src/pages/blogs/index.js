@@ -42,14 +42,6 @@ export default function BlogsAll({ data }) {
                 </div>
               ))}
             </div>
-            {/* <div className="blog-item__date"> */}
-              {/* {post.node.frontmatter.date} */}
-            {/* </div> */}
-            {/* <div className="blog-item__content">
-              {blogData.blogs.map((blog, index) => {
-                return <BlogItem key={`menu-item-${index}`} blog={blog} />
-              })}
-            </div> */}
           </div>
         </div>
       </section>

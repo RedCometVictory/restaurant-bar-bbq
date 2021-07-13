@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import emailjs from 'emailjs-com';
-// require('dotenv').config();
 
 const YOUR_SERVICE_ID = process.env.GATSBY_YOUR_SERVICE_ID;
 const YOUR_TEMPLATE_ID = process.env.GATSBY_YOUR_TEMPLATE_ID;
@@ -30,13 +29,13 @@ export default function ContactUs() {
               <label htmlFor="name" className="form__label">
                 Your Name<span className="req">*</span>
               </label>
-              <input type="text" name="name" className="form__input" required/>
+              <input type="text" name="name" className="form__input" placeholder="First Name (Last Name optional)" required/>
             </div>
             <div className="form__item">
               <label htmlFor="email" className="form__label">
                 Your Email Address<span className="req">*</span>
               </label>
-              <input type="email" name="email" className="form__input" required/>
+              <input type="email" name="email" className="form__input" placeholder="email@mail.com" required/>
             </div>
             <div className="form__item">
               <label htmlFor="subject" className="form__label">
@@ -51,7 +50,7 @@ export default function ContactUs() {
               <textarea name="message" className="form__textarea" id="" cols="30" rows="10" placeholder="Write your message." required></textarea>
             </div>
             <div className="form__item">
-              <div data-netlify-recaptcha="true"></div>
+              <div data-netlify-recaptcha="true" className="contact__captcha"></div>
             </div>
             <div className="form__footer">
               <input type="submit" className="btn btn-primary ms-mr ms-mt" value="Send Message" />

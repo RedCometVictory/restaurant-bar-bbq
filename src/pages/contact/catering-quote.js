@@ -32,7 +32,7 @@ export default function CateringQuote() {
               <label htmlFor="name" className="form__label">
                 Your Name<span className="req">*</span>
               </label>
-              <input type="text" name="name" className="form__input" required/>
+              <input type="text" name="name" className="form__input" placeholder="First Name (Last Name optional)" required/>
             </div>
             <div className="form__item">
               <label htmlFor="phone" className="form__label">
@@ -44,7 +44,7 @@ export default function CateringQuote() {
               <label htmlFor="email" className="form__label">
                 Your Email Address<span className="req">*</span>
               </label>
-              <input type="email" name="email" className="form__input" required/>
+              <input type="email" name="email" className="form__input" placeholder="email@mail.com" required/>
             </div>
             <div className="form__item">
               <label htmlFor="numpeople" className="form__label">
@@ -59,7 +59,7 @@ export default function CateringQuote() {
               <textarea name="message" className="form__textarea" id="" cols="30" rows="10" placeholder="Write your message." required></textarea>
             </div>
             <div className="form__item">
-              <div data-netlify-recaptcha="true"></div>
+              <div data-netlify-recaptcha="true" className="contact__captcha"></div>
             </div>
             <div className="form__footer">
               <input type="submit" className="btn btn-primary ms-mr ms-mt" value="Send Message" />

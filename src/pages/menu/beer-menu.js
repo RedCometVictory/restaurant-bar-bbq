@@ -1,18 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
 import Layout from '../../components/Layout';
 import HomeItem from '../../components/beer-items/HomeItem'; 
 import GuestItem from '../../components/beer-items/GuestItem'; 
-import CanItem from '../../components/beer-items/CanItem'; 
-// import beerData from '../../../content/beer-menu.json';
+import CanItem from '../../components/beer-items/CanItem';
 import beerData from '../../data/beer-menu.json';
-// {profiles.length > 0 ? (
-//   profiles.map(profile => (
-//     <ProfileItem key={profile.id} profile={profile} />
-//   ))
-// ) : (
-//   <h4>No profiles found...</h4>
-// )}
+
 export default function BeerMenu() {
+  const [hasMounted, setHasMounted] = useState(false);
+  const [popup, setPopup] = useState(false);
+  useEffect (() => {
+    setHasMounted(true);
+  }, []);
+  useEffect(() => {
+    setPopup(true);
+  }, [])
+  if (!hasMounted) {
+    return null;
+  }
+  if (popup) {
+    return (
+      <Layout>
+        <section className="product">
+          <div className="product__popup">
+            <div className="product__popup-title">
+              <h2>Are you 21 years old?</h2>
+            </div>
+            <div className="product__popup-confirm">
+              <div className="product__popup-btn one">
+                <Link to="/">No</Link>
+              </div>
+              <div className="product__popup-btn two">
+                <div onClick={() => setPopup(false)}>Yes</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Layout>
+    )
+  }
   return (
     <Layout>
       <section className="product">

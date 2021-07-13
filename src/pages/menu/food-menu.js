@@ -6,7 +6,6 @@ import SpecialItem from '../../components/food-items/SpecialItem';
 import SideItem from '../../components/food-items/SideItem';
 import AppetizerItem from '../../components/food-items/AppetizerItem';
 import KidItem from '../../components/food-items/KidItem';
-// import foodData from '../../../content/food-menu.json';
 import foodData from '../../data/food-menu.json';
 
 export default function FoodMenu() {

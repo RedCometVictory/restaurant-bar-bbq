@@ -1,9 +1,6 @@
 import React from 'react';
 import { FaAngleUp } from 'react-icons/fa';
 
-// export default function HomeItem({
-//   home : { title, image, description, prices }
-// }) {
 export default function HomeItem({
   home: { title, image, description, prices }
 }) {
@@ -32,4 +29,4 @@ export default function HomeItem({
       </div>
     </div>
   )
-}
+};

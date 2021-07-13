@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaYelp, FaTwitter } from 'react-icons/fa';
-// import { Link } from 'gatsby';
 
 export default function Footer() {
   return (
