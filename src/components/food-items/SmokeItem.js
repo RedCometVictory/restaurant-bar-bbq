@@ -9,6 +9,7 @@ export default function SmokeItem({
       <div className="menu-item__title">{title}</div>
       <div className="menu-item__container">
         <div className="menu-item__container-inner">
+          <input type="checkbox" className="menu-item__toggler" />
           <div className="menu-item__circle">
             <FaAngleUp className="menu-item__arrow" />
           </div>
@@ -19,9 +20,9 @@ export default function SmokeItem({
         </div>
         <div className="menu-item__prices">
           {prices.map((item, index) => (
-            <div className="menu-item__price">
-              <div key={`item-${index}`}>{item.name}</div>
-              <div key={`item-${index}`}>{item.price}</div>
+            <div className="menu-item__price" key={`item-${index}`}>
+              <div>{item.name}</div>
+              <div>{item.price}</div>
             </div>
           ))}
         </div>

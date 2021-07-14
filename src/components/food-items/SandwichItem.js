@@ -20,9 +20,9 @@ export default function SandwichItem({
         </div>
         <div className="menu-item__prices">
           {prices.map((item, index) => (
-            <div className="menu-item__price">
-              <div key={`item-${index}`}>{item.name}</div>
-              <div key={`item-${index}`}>{item.price}</div>
+            <div className="menu-item__price" key={`item-${index}`}>
+              <div>{item.name}</div>
+              <div>{item.price}</div>
             </div>
           ))}
         </div>

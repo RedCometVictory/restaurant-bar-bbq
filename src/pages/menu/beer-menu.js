@@ -4,6 +4,7 @@ import Layout from '../../components/Layout';
 import HomeItem from '../../components/beer-items/HomeItem'; 
 import GuestItem from '../../components/beer-items/GuestItem'; 
 import CanItem from '../../components/beer-items/CanItem';
+// json data refers to images in public folder
 import beerData from '../../data/beer-menu.json';
 
 export default function BeerMenu() {

@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { graphql } from 'gatsby';
@@ -8,9 +9,15 @@ export default function BlogDetails({ data }) {
   const { body } = data.mdx;
   const { title, date } = data.mdx.frontmatter;
   const featureImage = data.mdx.frontmatter.featureImage;
-  // const seoImage = data.mdx.frontmatter.featureImage.publicURLs;
+  const seoImage = data.mdx.frontmatter.featureImage.publicURL;
+  // <Seo /> with no props simply relies on default values
   return (
     <Layout>
+      <Seo
+        title={data.mdx.frontmatter.title}
+        image={seoImage}
+        description={data.mdx.body}
+      />
       <section className="blog">
         <div className="blog__header">
           <div className="blog__title">

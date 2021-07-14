@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'gatsby';
 import { FaCaretDown, FaBars } from 'react-icons/fa';
 import HeadOnly from '../../static/assets/headOnly.svg';

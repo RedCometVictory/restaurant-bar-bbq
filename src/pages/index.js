@@ -8,6 +8,7 @@ import { BgImage } from 'gbimage-bridge';
 // import BackgroundImage from "gatsby-background-image";
 import NavBar from "../components/NavBar";
 import Footer from '../components/Footer';
+import Seo from "../components/Seo";
 import { ThemeProvider } from '../context/ThemeContext';
 
 export default function Home({ data }) {
@@ -39,6 +40,7 @@ export default function Home({ data }) {
   return (
     <>
     <ThemeProvider>
+      <Seo />
       <NavBar />
       <main className="landing" >
         <section className="hero">

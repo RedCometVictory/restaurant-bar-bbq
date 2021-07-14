@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Layout from '../../components/Layout';
 import SandwichItem from '../../components/food-items/SandwichItem';
 import SmokeItem from '../../components/food-items/SmokeItem';
@@ -6,9 +6,18 @@ import SpecialItem from '../../components/food-items/SpecialItem';
 import SideItem from '../../components/food-items/SideItem';
 import AppetizerItem from '../../components/food-items/AppetizerItem';
 import KidItem from '../../components/food-items/KidItem';
+// json data refers to images in public folder
 import foodData from '../../data/food-menu.json';
 
 export default function FoodMenu() {
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect (() => {
+    setHasMounted(true);
+  }, []);
+  
+  if (!hasMounted) {
+    return null;
+  }
   return (
     <Layout>
       <section className="product">

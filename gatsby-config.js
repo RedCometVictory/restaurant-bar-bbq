@@ -10,8 +10,10 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'The Den Smokehouse and Brewery',
+    description: "Kerman's own smokehouse and brewery.",
     copyright: 'The Den Smokehouse & Brewery LLC - est. 2018',
-    description: 'Enjoy in-house brewed beer.',
+    url: 'https://www.thedenbrews.com/',
+    twitterUsername: '@thedenbrews',
     author: 'Jor-EL',
   },
   plugins: [
